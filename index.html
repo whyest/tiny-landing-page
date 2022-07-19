@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circeya</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <header class="header">
+    <div class="container header__container flex">
+      <a href="#" class="logo header__logo">
+        <img
+          src="img/logo.svg"
+          alt="Логотип компании Circeya"
+          class="logo__img"
+        />
+      </a>
+      <a class="header__contact" href="tel:495-495-4954">
+        <span class="phone">+7 (495) 495-49-54</span>
+        <img
+          class="header__img"
+          src="img/call-img.svg"
+          alt="Call +74954954954"
+        />
+      </a>
+    </div>
+  </header>
+
+  <body>
+    <main class="main">
+      <section class="top">
+        <article class="about">
+          <div class="btn-container container">
+            <button class="tab-btn btn-reset active" data-id="lorem">
+              Lorem
+            </button>
+            <button class="tab-btn btn-reset" data-id="ipsum">Ipsum</button>
+          </div>
+
+          <!-- single item -->
+          <div class="content active" id="lorem">
+            <h1 class="lorem__title container container-mobile">
+              Lorem ipsum dolor <em>sit</em> amet
+            </h1>
+            <div class="content__wrapper content__wrapper_top">
+              <div
+                class="content__info content__info_top left container-mobile"
+              >
+                <h3 class="content__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </h3>
+                <p class="content__text">
+                  Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur.
+                </p>
+                <p class="content__text">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum/ Incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat.
+                </p>
+              </div>
+              <div class="right">
+                <img
+                  class="content__img content__img_top"
+                  src="img/img-2.jpg"
+                  alt="Some woman undressing"
+                />
+              </div>
+            </div>
+            <div class="content__wrapper content__wrapper_bottom container">
+              <img
+                class="content__img_bottom"
+                src="img/img-1.jpg"
+                alt="Some woman undressing"
+              />
+              <div class="content__info content__info_bottom container-mobile">
+                <h3 class="content__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </h3>
+                <p class="content__text">
+                  Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur.
+                </p>
+                <p class="content__text">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="content flex" id="ipsum">
+            <h1 class="lorem__title center container container-mobile">
+              Lorem ipsum dolor <em>sit</em> amet
+            </h1>
+            <!-- Slider main container -->
+            <div class="swiper slider">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div
+                  class="modal-btn swiper-slide slide slide_1"
+                  data-path="one"
+                >
+                  <img
+                    src="img/img-swiper_1.jpg"
+                    alt="Изображение девушки"
+                    class="slide__img"
+                  />
+                </div>
+                <div
+                  class="modal-btn swiper-slide slide slide_2"
+                  data-path="two"
+                >
+                  <img
+                    src="img/img-swiper_2.jpg"
+                    alt="Изображение девушки"
+                    class="slide__img"
+                  />
+                  <div class="slide__text slide__text_2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </div>
+                </div>
+                <div
+                  class="modal-btn swiper-slide slide slide_3"
+                  data-path="three"
+                >
+                  <img
+                    src="img/img-swiper_3.jpg"
+                    alt="Изображение девушки"
+                    class="slide__img"
+                  />
+                </div>
+                <div
+                  class="modal-btn swiper-slide slide slide_4"
+                  data-path="four"
+                >
+                  <img
+                    src="img/img-swiper_4.jpg"
+                    alt="Изображение девушки"
+                    class="slide__img"
+                  />
+                </div>
+                <div
+                  class="modal-btn swiper-slide slide slide_5"
+                  data-path="five"
+                >
+                  <img
+                    src="img/img-swiper_5.jpg"
+                    alt="Изображение девушки"
+                    class="slide__img"
+                  />
+                  <div class="slide__text slide__text_5">
+                    Lorem ipsum dolor sit amet
+                  </div>
+                </div>
+              </div>
+              <div class="slider__nav">
+                <button class="btn btn-prev btn-reset">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.348 4.666C21.5224 4.8446 21.6201 5.08435 21.6201 5.334C21.6201 5.58366 21.5224 5.82341 21.348 6.002L11.602 16L21.348 25.996C21.5224 26.1746 21.6201 26.4143 21.6201 26.664C21.6201 26.9136 21.5224 27.1534 21.348 27.332C21.2632 27.4191 21.1618 27.4883 21.0498 27.5356C20.9379 27.5828 20.8175 27.6072 20.696 27.6072C20.5744 27.6072 20.4541 27.5828 20.3421 27.5356C20.2302 27.4883 20.1288 27.4191 20.044 27.332L9.68 16.698C9.49797 16.5112 9.39609 16.2608 9.39609 16C9.39609 15.7392 9.49797 15.4887 9.68 15.302L20.044 4.668C20.1288 4.58092 20.2302 4.5117 20.3421 4.46444C20.4541 4.41717 20.5744 4.39282 20.696 4.39282C20.8175 4.39282 20.9379 4.41717 21.0498 4.46444C21.1618 4.5117 21.2632 4.58092 21.348 4.668V4.666Z"
+                      fill="black"
+                    />
+                  </svg>
+                </button>
+                <button class="btn btn-next btn-reset">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.652 4.666C10.4775 4.8446 10.3799 5.08435 10.3799 5.334C10.3799 5.58366 10.4775 5.82341 10.652 6.002L20.398 16L10.652 25.996C10.4775 26.1746 10.3799 26.4143 10.3799 26.664C10.3799 26.9136 10.4775 27.1534 10.652 27.332C10.7368 27.4191 10.8382 27.4883 10.9501 27.5356C11.0621 27.5828 11.1824 27.6072 11.304 27.6072C11.4255 27.6072 11.5459 27.5828 11.6578 27.5356C11.7698 27.4883 11.8712 27.4191 11.956 27.332L22.32 16.698C22.502 16.5112 22.6039 16.2608 22.6039 16C22.6039 15.7392 22.502 15.4887 22.32 15.302L11.956 4.668C11.8712 4.58092 11.7698 4.5117 11.6578 4.46444C11.5459 4.41717 11.4255 4.39282 11.304 4.39282C11.1824 4.39282 11.0621 4.41717 10.9501 4.46444C10.8382 4.5117 10.7368 4.58092 10.652 4.668V4.666Z"
+                      fill="black"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- end of single item -->
+        </article>
+      </section>
+      <footer class="footer">
+        <div class="container flex">
+          <div class="footer__copy">© TEST, 1022–2022</div>
+        </div>
+      </footer>
+      <div class="modal">
+        <div class="modal__container" data-target="one">
+          <button class="modal-close btn-reset">
+            <svg
+              width="18"
+              height="19"
+              viewBox="0 0 18 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 1.2959L1 17.2959M17 17.2959L1 1.2959L17 17.2959Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="slider__nav_mob">
+            <button class="btn btn-prev_mob btn-reset">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.348 4.666C21.5224 4.8446 21.6201 5.08435 21.6201 5.334C21.6201 5.58366 21.5224 5.82341 21.348 6.002L11.602 16L21.348 25.996C21.5224 26.1746 21.6201 26.4143 21.6201 26.664C21.6201 26.9136 21.5224 27.1534 21.348 27.332C21.2632 27.4191 21.1618 27.4883 21.0498 27.5356C20.9379 27.5828 20.8175 27.6072 20.696 27.6072C20.5744 27.6072 20.4541 27.5828 20.3421 27.5356C20.2302 27.4883 20.1288 27.4191 20.044 27.332L9.68 16.698C9.49797 16.5112 9.39609 16.2608 9.39609 16C9.39609 15.7392 9.49797 15.4887 9.68 15.302L20.044 4.668C20.1288 4.58092 20.2302 4.5117 20.3421 4.46444C20.4541 4.41717 20.5744 4.39282 20.696 4.39282C20.8175 4.39282 20.9379 4.41717 21.0498 4.46444C21.1618 4.5117 21.2632 4.58092 21.348 4.668V4.666Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <button class="btn btn-next_mob btn-reset">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.652 4.666C10.4775 4.8446 10.3799 5.08435 10.3799 5.334C10.3799 5.58366 10.4775 5.82341 10.652 6.002L20.398 16L10.652 25.996C10.4775 26.1746 10.3799 26.4143 10.3799 26.664C10.3799 26.9136 10.4775 27.1534 10.652 27.332C10.7368 27.4191 10.8382 27.4883 10.9501 27.5356C11.0621 27.5828 11.1824 27.6072 11.304 27.6072C11.4255 27.6072 11.5459 27.5828 11.6578 27.5356C11.7698 27.4883 11.8712 27.4191 11.956 27.332L22.32 16.698C22.502 16.5112 22.6039 16.2608 22.6039 16C22.6039 15.7392 22.502 15.4887 22.32 15.302L11.956 4.668C11.8712 4.58092 11.7698 4.5117 11.6578 4.46444C11.5459 4.41717 11.4255 4.39282 11.304 4.39282C11.1824 4.39282 11.0621 4.41717 10.9501 4.46444C10.8382 4.5117 10.7368 4.58092 10.652 4.668V4.666Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-content">
+            <div class="modal-content__img">
+              <img src="img/img-swiper_1.jpg" alt="Картинка" />
+            </div>
+            <div class="modal-content__text">
+              <p class="modal-descr__descr">
+                Incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua.
+                Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo
+                consequat. Duis aute irure dolor in&nbsp;reprehenderit
+                in&nbsp;voluptate velit esse cillum dolore eu&nbsp;fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in&nbsp;culpa qui officia deserunt mollit anim id&nbsp;est
+                laborum
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal__container" data-target="two">
+          <button class="modal-close btn-reset">
+            <svg
+              width="18"
+              height="19"
+              viewBox="0 0 18 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 1.2959L1 17.2959M17 17.2959L1 1.2959L17 17.2959Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="slider__nav_mob">
+            <button class="btn btn-prev_mob btn-reset">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.348 4.666C21.5224 4.8446 21.6201 5.08435 21.6201 5.334C21.6201 5.58366 21.5224 5.82341 21.348 6.002L11.602 16L21.348 25.996C21.5224 26.1746 21.6201 26.4143 21.6201 26.664C21.6201 26.9136 21.5224 27.1534 21.348 27.332C21.2632 27.4191 21.1618 27.4883 21.0498 27.5356C20.9379 27.5828 20.8175 27.6072 20.696 27.6072C20.5744 27.6072 20.4541 27.5828 20.3421 27.5356C20.2302 27.4883 20.1288 27.4191 20.044 27.332L9.68 16.698C9.49797 16.5112 9.39609 16.2608 9.39609 16C9.39609 15.7392 9.49797 15.4887 9.68 15.302L20.044 4.668C20.1288 4.58092 20.2302 4.5117 20.3421 4.46444C20.4541 4.41717 20.5744 4.39282 20.696 4.39282C20.8175 4.39282 20.9379 4.41717 21.0498 4.46444C21.1618 4.5117 21.2632 4.58092 21.348 4.668V4.666Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <button class="btn btn-next_mob btn-reset">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.652 4.666C10.4775 4.8446 10.3799 5.08435 10.3799 5.334C10.3799 5.58366 10.4775 5.82341 10.652 6.002L20.398 16L10.652 25.996C10.4775 26.1746 10.3799 26.4143 10.3799 26.664C10.3799 26.9136 10.4775 27.1534 10.652 27.332C10.7368 27.4191 10.8382 27.4883 10.9501 27.5356C11.0621 27.5828 11.1824 27.6072 11.304 27.6072C11.4255 27.6072 11.5459 27.5828 11.6578 27.5356C11.7698 27.4883 11.8712 27.4191 11.956 27.332L22.32 16.698C22.502 16.5112 22.6039 16.2608 22.6039 16C22.6039 15.7392 22.502 15.4887 22.32 15.302L11.956 4.668C11.8712 4.58092 11.7698 4.5117 11.6578 4.46444C11.5459 4.41717 11.4255 4.39282 11.304 4.39282C11.1824 4.39282 11.0621 4.41717 10.9501 4.46444C10.8382 4.5117 10.7368 4.58092 10.652 4.668V4.666Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-content">
+            <div class="modal-content__img">
+              <img src="img/img-swiper_2.jpg" alt="Картинка" />
+            </div>
+            <div class="modal-content__text">
+              <p class="modal-descr__descr">
+                Incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua.
+                Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo
+                consequat. Duis aute irure dolor in&nbsp;reprehenderit
+                in&nbsp;voluptate velit esse cillum dolore eu&nbsp;fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in&nbsp;culpa qui officia deserunt mollit anim id&nbsp;est
+                laborum
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal__container" data-target="three">
+          <button class="modal-close btn-reset">
+            <svg
+              width="18"
+              height="19"
+              viewBox="0 0 18 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 1.2959L1 17.2959M17 17.2959L1 1.2959L17 17.2959Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="slider__nav_mob">
+            <button class="btn btn-prev_mob btn-reset">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.348 4.666C21.5224 4.8446 21.6201 5.08435 21.6201 5.334C21.6201 5.58366 21.5224 5.82341 21.348 6.002L11.602 16L21.348 25.996C21.5224 26.1746 21.6201 26.4143 21.6201 26.664C21.6201 26.9136 21.5224 27.1534 21.348 27.332C21.2632 27.4191 21.1618 27.4883 21.0498 27.5356C20.9379 27.5828 20.8175 27.6072 20.696 27.6072C20.5744 27.6072 20.4541 27.5828 20.3421 27.5356C20.2302 27.4883 20.1288 27.4191 20.044 27.332L9.68 16.698C9.49797 16.5112 9.39609 16.2608 9.39609 16C9.39609 15.7392 9.49797 15.4887 9.68 15.302L20.044 4.668C20.1288 4.58092 20.2302 4.5117 20.3421 4.46444C20.4541 4.41717 20.5744 4.39282 20.696 4.39282C20.8175 4.39282 20.9379 4.41717 21.0498 4.46444C21.1618 4.5117 21.2632 4.58092 21.348 4.668V4.666Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <button class="btn btn-next_mob btn-reset">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.652 4.666C10.4775 4.8446 10.3799 5.08435 10.3799 5.334C10.3799 5.58366 10.4775 5.82341 10.652 6.002L20.398 16L10.652 25.996C10.4775 26.1746 10.3799 26.4143 10.3799 26.664C10.3799 26.9136 10.4775 27.1534 10.652 27.332C10.7368 27.4191 10.8382 27.4883 10.9501 27.5356C11.0621 27.5828 11.1824 27.6072 11.304 27.6072C11.4255 27.6072 11.5459 27.5828 11.6578 27.5356C11.7698 27.4883 11.8712 27.4191 11.956 27.332L22.32 16.698C22.502 16.5112 22.6039 16.2608 22.6039 16C22.6039 15.7392 22.502 15.4887 22.32 15.302L11.956 4.668C11.8712 4.58092 11.7698 4.5117 11.6578 4.46444C11.5459 4.41717 11.4255 4.39282 11.304 4.39282C11.1824 4.39282 11.0621 4.41717 10.9501 4.46444C10.8382 4.5117 10.7368 4.58092 10.652 4.668V4.666Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-content">
+            <div class="modal-content__img">
+              <img src="img/img-swiper_3.jpg" alt="Картинка" />
+            </div>
+            <div class="modal-content__text">
+              <p class="modal-descr__descr">
+                Incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua.
+                Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo
+                consequat. Duis aute irure dolor in&nbsp;reprehenderit
+                in&nbsp;voluptate velit esse cillum dolore eu&nbsp;fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in&nbsp;culpa qui officia deserunt mollit anim id&nbsp;est
+                laborum
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal__container" data-target="four">
+          <button class="modal-close btn-reset">
+            <svg
+              width="18"
+              height="19"
+              viewBox="0 0 18 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 1.2959L1 17.2959M17 17.2959L1 1.2959L17 17.2959Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="slider__nav_mob">
+            <button class="btn btn-prev_mob btn-reset">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.348 4.666C21.5224 4.8446 21.6201 5.08435 21.6201 5.334C21.6201 5.58366 21.5224 5.82341 21.348 6.002L11.602 16L21.348 25.996C21.5224 26.1746 21.6201 26.4143 21.6201 26.664C21.6201 26.9136 21.5224 27.1534 21.348 27.332C21.2632 27.4191 21.1618 27.4883 21.0498 27.5356C20.9379 27.5828 20.8175 27.6072 20.696 27.6072C20.5744 27.6072 20.4541 27.5828 20.3421 27.5356C20.2302 27.4883 20.1288 27.4191 20.044 27.332L9.68 16.698C9.49797 16.5112 9.39609 16.2608 9.39609 16C9.39609 15.7392 9.49797 15.4887 9.68 15.302L20.044 4.668C20.1288 4.58092 20.2302 4.5117 20.3421 4.46444C20.4541 4.41717 20.5744 4.39282 20.696 4.39282C20.8175 4.39282 20.9379 4.41717 21.0498 4.46444C21.1618 4.5117 21.2632 4.58092 21.348 4.668V4.666Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <button class="btn btn-next_mob btn-reset">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.652 4.666C10.4775 4.8446 10.3799 5.08435 10.3799 5.334C10.3799 5.58366 10.4775 5.82341 10.652 6.002L20.398 16L10.652 25.996C10.4775 26.1746 10.3799 26.4143 10.3799 26.664C10.3799 26.9136 10.4775 27.1534 10.652 27.332C10.7368 27.4191 10.8382 27.4883 10.9501 27.5356C11.0621 27.5828 11.1824 27.6072 11.304 27.6072C11.4255 27.6072 11.5459 27.5828 11.6578 27.5356C11.7698 27.4883 11.8712 27.4191 11.956 27.332L22.32 16.698C22.502 16.5112 22.6039 16.2608 22.6039 16C22.6039 15.7392 22.502 15.4887 22.32 15.302L11.956 4.668C11.8712 4.58092 11.7698 4.5117 11.6578 4.46444C11.5459 4.41717 11.4255 4.39282 11.304 4.39282C11.1824 4.39282 11.0621 4.41717 10.9501 4.46444C10.8382 4.5117 10.7368 4.58092 10.652 4.668V4.666Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-content">
+            <div class="modal-content__img">
+              <img src="img/img-swiper_4.jpg" alt="Картинка" />
+            </div>
+            <div class="modal-content__text">
+              <p class="modal-descr__descr">
+                Incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua.
+                Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo
+                consequat. Duis aute irure dolor in&nbsp;reprehenderit
+                in&nbsp;voluptate velit esse cillum dolore eu&nbsp;fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in&nbsp;culpa qui officia deserunt mollit anim id&nbsp;est
+                laborum
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal__container" data-target="five">
+          <button class="modal-close btn-reset">
+            <svg
+              width="18"
+              height="19"
+              viewBox="0 0 18 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 1.2959L1 17.2959M17 17.2959L1 1.2959L17 17.2959Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="slider__nav_mob">
+            <button class="btn btn-prev_mob btn-reset">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.348 4.666C21.5224 4.8446 21.6201 5.08435 21.6201 5.334C21.6201 5.58366 21.5224 5.82341 21.348 6.002L11.602 16L21.348 25.996C21.5224 26.1746 21.6201 26.4143 21.6201 26.664C21.6201 26.9136 21.5224 27.1534 21.348 27.332C21.2632 27.4191 21.1618 27.4883 21.0498 27.5356C20.9379 27.5828 20.8175 27.6072 20.696 27.6072C20.5744 27.6072 20.4541 27.5828 20.3421 27.5356C20.2302 27.4883 20.1288 27.4191 20.044 27.332L9.68 16.698C9.49797 16.5112 9.39609 16.2608 9.39609 16C9.39609 15.7392 9.49797 15.4887 9.68 15.302L20.044 4.668C20.1288 4.58092 20.2302 4.5117 20.3421 4.46444C20.4541 4.41717 20.5744 4.39282 20.696 4.39282C20.8175 4.39282 20.9379 4.41717 21.0498 4.46444C21.1618 4.5117 21.2632 4.58092 21.348 4.668V4.666Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <button class="btn btn-next_mob btn-reset">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.652 4.666C10.4775 4.8446 10.3799 5.08435 10.3799 5.334C10.3799 5.58366 10.4775 5.82341 10.652 6.002L20.398 16L10.652 25.996C10.4775 26.1746 10.3799 26.4143 10.3799 26.664C10.3799 26.9136 10.4775 27.1534 10.652 27.332C10.7368 27.4191 10.8382 27.4883 10.9501 27.5356C11.0621 27.5828 11.1824 27.6072 11.304 27.6072C11.4255 27.6072 11.5459 27.5828 11.6578 27.5356C11.7698 27.4883 11.8712 27.4191 11.956 27.332L22.32 16.698C22.502 16.5112 22.6039 16.2608 22.6039 16C22.6039 15.7392 22.502 15.4887 22.32 15.302L11.956 4.668C11.8712 4.58092 11.7698 4.5117 11.6578 4.46444C11.5459 4.41717 11.4255 4.39282 11.304 4.39282C11.1824 4.39282 11.0621 4.41717 10.9501 4.46444C10.8382 4.5117 10.7368 4.58092 10.652 4.668V4.666Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-content">
+            <div class="modal-content__img">
+              <img src="img/img-swiper_5.jpg" alt="Картинка" />
+            </div>
+            <div class="modal-content__text">
+              <p class="modal-descr__descr">
+                Incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua.
+                Ut&nbsp;enim ad&nbsp;minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut&nbsp;aliquip ex&nbsp;ea&nbsp;commodo
+                consequat. Duis aute irure dolor in&nbsp;reprehenderit
+                in&nbsp;voluptate velit esse cillum dolore eu&nbsp;fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in&nbsp;culpa qui officia deserunt mollit anim id&nbsp;est
+                laborum
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script defer src="script.js"></script>
+    <script defer src="modal.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
